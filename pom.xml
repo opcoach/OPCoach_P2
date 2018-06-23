@@ -14,6 +14,29 @@
   </issueManagement>
 
 
+	<properties>
+		<tycho-version>1.2.0</tycho-version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>photon</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/releases/photon/</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<plugins>
+			<plugin>
+				<!-- enable tycho build extension -->
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<extensions>true</extensions>
+			</plugin>
+		</plugins>
+	</build>
 
 	<!-- Features that must be build together to be put in the P2 repository -->
 	<modules>
@@ -22,6 +45,7 @@
 		<module>datagenerator</module>
 		<module>e4Preferences/build/com.opcoach.e4.preferences.parent</module>
 		<module>genModelAddon</module>
+		<module>com.opcoach.p2.repository</module>
 	</modules>
 
 </project>
