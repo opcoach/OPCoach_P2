@@ -1,0 +1,15 @@
+[submodule "e4Preferences"]
+	path = e4Preferences
+	url = https://github.com/opcoach/e4Preferences.git
+[submodule "E34MigrationTooling"]
+	path = E34MigrationTooling
+	url = https://github.com/opcoach/E34MigrationTooling.git
+[submodule "genModelAddon"]
+	path = genModelAddon
+	url = https://github.com/opcoach/genModelAddon.git
+[submodule "E4Tester"]
+	path = E4Tester
+	url = https://github.com/opcoach/E4Tester.git
+[submodule "datagenerator"]
+	path = datagenerator
+	url = https://github.com/opcoach/datagenerator.git

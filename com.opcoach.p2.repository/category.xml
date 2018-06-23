@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.opcoach.e34tools.feature_1.2.0.qualifier.jar" id="com.opcoach.e34tools.feature" version="1.2.0.qualifier">
+      <category name="com.opcoach.e34tools"/>
+   </feature>
+   <feature url="features/com.opcoach.genmodeladdon.feature_2.0.0.qualifier.jar" id="com.opcoach.genmodeladdon.feature" version="2.0.0.qualifier">
+      <category name="com.opcoach.genmodeladdon"/>
+   </feature>
+   <feature url="features/com.opcoach.generator.feature_1.0.0.qualifier.jar" id="com.opcoach.generator.feature" version="1.0.0.qualifier">
+      <category name="com.opcoach.generator"/>
+   </feature>
+   <feature url="features/com.opcoach.e4tester.feature_0.1.0.qualifier.jar" id="com.opcoach.e4tester.feature" version="0.1.0.qualifier">
+      <category name="com.opcoach.e4tester"/>
+   </feature>
+   <feature url="features/com.opcoach.e4.preferences.feature_1.1.0.qualifier.jar" id="com.opcoach.e4.preferences.feature" version="1.1.0.qualifier">
+      <category name="com.opcoach.e4preferences"/>
+   </feature>
+   <category-def name="com.opcoach.e34tools" label="E34Tools">
+      <description>
+         The E34 Tooling provided by OPCoach
+      </description>
+   </category-def>
+   <category-def name="com.opcoach.genmodeladdon" label="GenModelAddon">
+      <description>
+         The GenModelAddon project
+      </description>
+   </category-def>
+   <category-def name="com.opcoach.generator" label="Data Generator">
+      <description>
+         The Data Generator project used to generate data samples
+      </description>
+   </category-def>
+   <category-def name="com.opcoach.e4tester" label="E4 Tester">
+      <description>
+         The new E4 tester project providing some JUnit TestCases to help in E4 testing.
+      </description>
+   </category-def>
+   <category-def name="com.opcoach.e4preferences" label="E4 Preferences">
+      <description>
+         A plugin and a plugin fragment to manage E4 preferences without any dependencies to E3 libraries
+      </description>
+   </category-def>
+</site>
