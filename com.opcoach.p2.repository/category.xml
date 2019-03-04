@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/com.opcoach.genmodeladdon.feature_2.1.0.qualifier.jar" id="com.opcoach.genmodeladdon.feature" version="2.1.0.qualifier">
-      <category name="com.opcoach.genmodeladdon"/>
-   </feature>
    <feature url="features/com.opcoach.generator.feature_1.0.0.qualifier.jar" id="com.opcoach.generator.feature" version="1.0.0.qualifier">
       <category name="com.opcoach.generator"/>
-   </feature>
-   <feature url="features/com.opcoach.e4.preferences.feature_1.1.0.qualifier.jar" id="com.opcoach.e4.preferences.feature" version="1.1.0.qualifier">
-      <category name="com.opcoach.e4preferences"/>
    </feature>
    <feature url="features/com.opcoach.e34tools.feature_1.2.0.qualifier.jar" id="com.opcoach.e34tools.feature" version="1.2.0.qualifier">
       <category name="com.opcoach.e34tools"/>
    </feature>
    <feature url="features/com.opcoach.e4tester.feature_1.0.0.qualifier.jar" id="com.opcoach.e4tester.feature" version="1.0.0.qualifier">
       <category name="com.opcoach.e4tester"/>
+   </feature>
+   <feature url="features/com.opcoach.e4.preferences.feature_1.2.0.qualifier.jar" id="com.opcoach.e4.preferences.feature" version="1.2.0.qualifier">
+      <category name="com.opcoach.e4preferences"/>
+   </feature>
+   <feature url="features/com.opcoach.genmodeladdon.feature_2.2.0.qualifier.jar" id="com.opcoach.genmodeladdon.feature" version="2.2.0.qualifier">
+      <category name="com.opcoach.genmodeladdon"/>
    </feature>
    <category-def name="com.opcoach.e34tools" label="E34Tools">
       <description>
