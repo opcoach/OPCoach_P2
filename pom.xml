@@ -24,6 +24,11 @@
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/2019-06</url>
 		</repository>
+		<repository>
+			<id>xtext</id>
+			<layout>p2</layout>
+			<url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.18.0/</url>
+		</repository>
 	</repositories>
 
 	<build>
