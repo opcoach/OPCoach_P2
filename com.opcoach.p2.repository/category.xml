@@ -15,6 +15,9 @@
    <feature id="com.opcoach.genmodeladdon.feature">
       <category name="com.opcoach.genmodeladdon"/>
    </feature>
+   <feature id="org.lcx.robotframework.swtbot.feature">
+      <category name="com.opcoach.robotframework-eclipselibrary"/>
+   </feature>
    <category-def name="com.opcoach.e34tools" label="E34Tools">
       <description>
          The E34 Tooling provided by OPCoach
@@ -38,6 +41,15 @@
    <category-def name="com.opcoach.e4preferences" label="E4 Preferences">
       <description>
          A plugin and a plugin fragment to manage E4 preferences without any dependencies to E3 libraries
+      </description>
+   </category-def>
+   <category-def name="com.opcoach.robotframework-eclipselibrary" label="Robot Framework for SWTBot">
+      <description>
+         The delivery of this repository :
+
+https://github.com/lcarbonn/robotframework-eclipselibrary.git.
+
+It provides keywords to write high level UI tests that are run using SWTBot
       </description>
    </category-def>
 </site>
