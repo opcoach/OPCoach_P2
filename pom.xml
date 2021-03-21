@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.opcoach.p2</groupId>
@@ -8,29 +9,29 @@
 	<packaging>pom</packaging>
 
 
-  <issueManagement>
-    <url>https://github.com/opcoach/OPCoach_P2/issues</url>
-    <system>github</system>
-  </issueManagement>
+	<issueManagement>
+		<url>https://github.com/opcoach/OPCoach_P2/issues</url>
+		<system>github</system>
+	</issueManagement>
 
 
 	<properties>
-		<tycho-version>2.1.0</tycho-version>
+		<tycho-version>2.2.0</tycho-version>
 	</properties>
 
 	<repositories>
 		<repository>
-			<id>Simrel2020-12</id>
+			<id>Simrel2021-03</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/2020-12</url>
+			<url>http://download.eclipse.org/releases/2021-03</url>
 		</repository>
 		<repository>
 			<id>xtext</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.24.0</url>
+			<url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.25.0</url>
 		</repository>
-		
-		<!--  Add these global repo for robotframework-eclipselibrary -->
+
+		<!-- Add these global repo for robotframework-eclipselibrary -->
 		<repository>
 			<id>nattable</id>
 			<layout>p2</layout>
@@ -41,11 +42,11 @@
 			<layout>p2</layout>
 			<url>https://download.eclipse.org/technology/swtbot/releases/latest/</url>
 		</repository>
-		
-		
-		
-		
-		
+
+
+
+
+
 	</repositories>
 
 	<build>
@@ -57,6 +58,64 @@
 				<version>${tycho-version}</version>
 				<extensions>true</extensions>
 			</plugin>
+
+			<!-- enable source plugin and feature generation -->
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-source-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>plugin-source</id>
+						<goals>
+							<goal>plugin-source</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>feature-source</id>
+						<goals>
+							<goal>feature-source</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>attach-p2-metadata</id>
+						<phase>package</phase>
+						<goals>
+							<goal>p2-metadata</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			
+			<!--  All this repository must be built using JAVASE-11 (minimal version for Eclipse) -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-toolchains-plugin</artifactId>
+				<version>1.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>toolchain</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<toolchains>
+						<jdk>
+							<version>JavaSE-11</version>
+							<vendor>openjdk</vendor>
+						</jdk>
+					</toolchains>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 

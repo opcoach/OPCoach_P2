@@ -18,6 +18,28 @@
    <feature id="org.lcx.robotframework.swtbot.feature">
       <category name="com.opcoach.robotframework-eclipselibrary"/>
    </feature>
+   
+   
+   <!-- sources features -->
+   <feature id="com.opcoach.generator.feature.source">
+      <category name="com.opcoach.generator"/>
+   </feature>
+   <feature id="com.opcoach.e34tools.feature.source">
+      <category name="com.opcoach.e34tools"/>
+   </feature>
+   <feature id="com.opcoach.e4.preferences.feature.source">
+      <category name="com.opcoach.e4preferences"/>
+   </feature>
+   <feature id="com.opcoach.e4tester.feature.source">
+      <category name="com.opcoach.e4tester"/>
+   </feature>
+   <feature id="com.opcoach.genmodeladdon.feature.source">
+      <category name="com.opcoach.genmodeladdon"/>
+   </feature>
+   <feature id="org.lcx.robotframework.swtbot.feature.source">
+      <category name="com.opcoach.robotframework-eclipselibrary"/>
+   </feature>
+   
    <category-def name="com.opcoach.e34tools" label="E34Tools">
       <description>
          The E34 Tooling provided by OPCoach
