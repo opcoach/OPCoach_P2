@@ -21,9 +21,9 @@
 
 	<repositories>
 		<repository>
-			<id>Simrel2021-09</id>
+			<id>Simrel2021-12</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/2021-09</url>
+			<url>http://download.eclipse.org/releases/2021-12</url>
 		</repository>
 		<repository>
 			<id>xtext</id>
