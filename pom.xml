@@ -16,26 +16,26 @@
 
 
 	<properties>
-		<tycho-version>2.7.3</tycho-version>
+		<tycho-version>2.7.5</tycho-version>
 	</properties>
 
 	<repositories>
 		<repository>
-			<id>Simrel2022-03</id>
+			<id>Simrel2022-09</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/2022-03</url>
+			<url>https://download.eclipse.org/releases/2022-09</url>
 		</repository>
 		<repository>
 			<id>xtext</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.26.0</url>
+			<url>https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.28.0</url>
 		</repository>
 
 		<!-- Add these global repo for robotframework-eclipselibrary -->
 		<repository>
 			<id>nattable</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/nattable/snapshots/latest/repository</url>
+			<url>https://download.eclipse.org/nattable/snapshots/42/repository</url>
 		</repository>
 		<repository>
 			<id>swtbot</id>
