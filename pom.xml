@@ -16,19 +16,19 @@
 
 
 	<properties>
-		<tycho-version>3.0.1</tycho-version>
+		<tycho-version>4.0.1</tycho-version>
 	</properties>
 
 	<repositories>
 		<repository>
-			<id>Simrel2022-12</id>
+			<id>Simrel2023-06</id>
 			<layout>p2</layout>
-			<url>https://download.eclipse.org/releases/2022-12</url>
+			<url>https://download.eclipse.org/releases/2023-06</url>
 		</repository>
 		<repository>
 			<id>xtext</id>
 			<layout>p2</layout>
-			<url>https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.29.0</url>
+			<url>https://download.eclipse.org/modeling/tmf/xtext/updates/releases/2.31.0</url>
 		</repository>
 
 		<!-- Add these global repo for robotframework-eclipselibrary -->
@@ -94,7 +94,7 @@
 				</executions>
 			</plugin>
 			
-			<!--  All this repository must be built using JAVASE-11 (minimal version for Eclipse) -->
+			<!--  All this repository must be built using JAVASE-17 (minimal version for Eclipse) -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-toolchains-plugin</artifactId>
@@ -109,7 +109,7 @@
 				<configuration>
 					<toolchains>
 						<jdk>
-							<version>JavaSE-11</version>
+							<version>JavaSE-17</version>
 							<vendor>openjdk</vendor>
 						</jdk>
 					</toolchains>
